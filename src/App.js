@@ -4,6 +4,7 @@ import Home from './pages/homepage/home';
 import About from './pages/aboutpage/about';
 import './style/style.css'
 import Tours from './pages/tours/Towers';
+import Reviews from './pages/reviews/reviews';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
 {path:'/' ,element:<Home/>},
 {path:'/about' ,element:<About/>},
 {path:'/Tours' ,element:<Tours/>},
+{path:'/reviews' ,element:<Reviews/>},
  ])
 
   return (   <>

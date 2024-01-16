@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Loading from "../loading/loading.jsx";
+import Service from "../service/service.jsx";
 export default function Tour() {
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState([]);
@@ -50,9 +51,11 @@ export default function Tour() {
     </div>
     
  }
+
   return (
     <>
       <div className="text-center container bg-light">
+        
         {data.map((dat, index) => {
           const { image, info, name, price, id } = dat;
           return (
@@ -89,6 +92,8 @@ export default function Tour() {
 
         <button onClick={() => setCount((old) => old + 1)}>add</button>
       </div>
+      
+            
     </>
   );
 }
