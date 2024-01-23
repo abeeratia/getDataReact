@@ -1,14 +1,19 @@
 import React, { useState } from "react";
 import data from "../../data/data";
 import Navbar from "../../Component/navbar/navbar";
+import Sidebar from "../../Component/sidebar/sidebar";
+
 export default function Home() {
   const [peaple, setPeaple] = useState(data)
 
  
   return (<>
   <div>
-      <Navbar/>        
-         
+      <Navbar/>  
+      <div className="mt-5">
+      <Sidebar/>
+        </div>      
+      
     <div  className="bg-danger container text-center p-3 mt-5  w-50" >
       {peaple.map((dat, index) => {
         const { name, age, image } = dat;

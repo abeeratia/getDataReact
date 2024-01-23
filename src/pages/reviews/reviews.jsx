@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import people from "../../data/data";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import Navbar from "../../Component/navbar/navbar";
 
 function Reviews() {
   const [index, setIndex] = useState(0);
@@ -36,6 +37,7 @@ function Reviews() {
      console.log(image);
   return (
     <div>
+      <Navbar/>
       <div className="mt-5 bg-light p-5 text-center container bg-light">
         <div className="w-25 m-auto">
           <img src={image} className="w-100" alt="" />
@@ -56,6 +58,7 @@ function Reviews() {
           </span>
         </div>
       </div>
+      
     </div>
   );
 }

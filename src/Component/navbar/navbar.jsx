@@ -27,8 +27,9 @@ export default function Navbar() {
           <div className="navlinks">
              <ul className="d-flex  " >
                 <li><Link to="/">Home</Link></li>
-                <li><a href="#Tours">Tours</a></li>
-                <li><a href="#reviews">reviews</a></li>
+                <li><Link to="/Tours">Tours</Link></li>
+                <li><Link to="/reviews">reviews</Link></li>
+                <li><Link to="/category">category</Link></li>
              </ul>
           </div>
           <div className="socialicons">

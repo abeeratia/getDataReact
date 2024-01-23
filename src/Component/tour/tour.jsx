@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Loading from "../loading/loading.jsx";
 import Service from "../service/service.jsx";
+import Navbar from "../navbar/navbar.jsx";
 export default function Tour() {
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState([]);
@@ -54,6 +55,7 @@ export default function Tour() {
 
   return (
     <>
+     <Navbar/>
       <div className="text-center container bg-light">
         
         {data.map((dat, index) => {
@@ -91,6 +93,7 @@ export default function Tour() {
         {count}
 
         <button onClick={() => setCount((old) => old + 1)}>add</button>
+       
       </div>
       
             
